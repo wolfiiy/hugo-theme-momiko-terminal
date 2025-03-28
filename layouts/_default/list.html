@@ -23,6 +23,7 @@
         </p>
       {{ end }}
     </div>
+    {{ partial "pagination.html" . }}
   {{- else -}}
     <div class="posts">
     {{ range .Paginator.Pages }}
