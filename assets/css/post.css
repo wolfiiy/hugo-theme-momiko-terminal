@@ -19,6 +19,10 @@
   width: 100%;
 }
 
+.posts.short {
+  color: color-mix(in srgb,var(--foreground) 65%,transparent);
+}
+
 .post {
   width: 100%;
   text-align: left;

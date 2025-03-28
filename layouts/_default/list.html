@@ -4,7 +4,27 @@
       {{ . }}
     </div>
   {{ end }}
-  <div class="posts">
+  
+  {{- if .Site.Params.shortLists -}}
+    <div class="posts short">
+      {{ range .Paginator.Pages }}
+        <p>>
+          <span class="post-short date">
+            {{- if .Date -}}
+              <time class="post-date-short">
+                {{- .Date | time.Format ":date_short" -}}
+              </time>
+            {{- end -}}
+          </span>
+          -
+          <span class="post-title-short">
+            <a href="{{ .Permalink }}">{{ .Title | markdownify}}</a>
+          </span>
+        </p>
+      {{ end }}
+    </div>
+  {{- else -}}
+    <div class="posts">
     {{ range .Paginator.Pages }}
       <article class="post on-list">
         <h2 class="post-title">
@@ -53,4 +73,5 @@
 
     {{ partial "pagination.html" . }}
   </div>
+  {{- end -}}
 {{ end }}
