@@ -21,6 +21,12 @@ a.button {
   outline: none;
 }
 
+button:hover,
+.button:hover {
+  background: var(--accent) !important;
+  color: var(--background) !important;
+}
+
 button.outline,
 .button.outline,
 a.button.outline {
