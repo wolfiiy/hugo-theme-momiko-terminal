@@ -1,6 +1,8 @@
 # Terminal
 
-**Demo: https://panr.github.io/hugo-theme-terminal-demo/**
+**Demo: https://panr.github.io/hugo-theme-terminal-demo/** (original)
+
+**Usage: https://github.com/wolfiiy/momiko**
 
 **Create your own color scheme: https://panr.github.io/terminal-css/**
 
@@ -33,6 +35,11 @@
 - **really nice duotone**, custom syntax highlighting based on [**Chroma**](https://github.com/alecthomas/chroma) (fast, built-in Hugo syntax highlighter)
 - fully responsive
 - fully based on Hugo ecosystem (Pipes and Modules)
+
+### Extras provided by this fork
+
+- URL highlighting on hover
+- Alternative compact list view
 
 #### Built-in shortcodes
 
