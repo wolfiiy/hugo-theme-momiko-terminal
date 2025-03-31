@@ -3,15 +3,27 @@
 :root {
   --accent-rgb: 209, 170, 255;
   --glow: rgba(var(--accent-rgb), 0.4);
-  --scanlines-color: rgba(70, 70, 70, 0.5)
+  --scanlines-color: rgba(70, 70, 70, 0.5);
+  --short-transition: 0.08s;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--background);
 }
 
 a:hover {
-  -webkit-box-shadow:0px 0px 79px 8px var(--accent);
--moz-box-shadow: 0px 0px 79px 8px var(--accent);
-box-shadow: 0px 0px 79px 8px var(--glow);
+  /* Highlighting */
+  background: var(--accent) !important;
+  color: var(--background) !important;
+
+  /* Glow */
+  -webkit-box-shadow:0px 0px 79px 8px var(--glow);
+  -moz-box-shadow: 0px 0px 79px 8px var(--glow);
+  box-shadow: 0px 0px 79px 8px var(--glow);
 }
 
+/* Scanlines effect */
 html::before {
   content: "";
   position: fixed;
@@ -29,4 +41,22 @@ html::before {
     );
   z-index: 100;
   pointer-events: none;
+}
+
+a {
+  transition: all var(--short-transition) ease-out;
+  transition: 
+    background var(--short-transition) ease-out,
+    color var(--short-transition) ease-out;
+}
+
+.blinking-cursor {
+  animation: blink 1.75s step-start infinite;
+  content: "▁";
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0%;
+  }
 }

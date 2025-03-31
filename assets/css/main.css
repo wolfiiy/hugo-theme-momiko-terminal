@@ -73,11 +73,6 @@ a {
   color: var(--accent);
 }
 
-a:hover {
-  background: var(--accent) !important;
-  color: var(--background) !important;
-}
-
 button {
   position: relative;
   font: inherit;
