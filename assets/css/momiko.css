@@ -23,6 +23,11 @@ a:hover {
   box-shadow: 0px 0px 79px 8px var(--glow);
 }
 
+html {
+  text-shadow: 0px 0px 1.5px rgba(255, 255, 255, 0.8);
+  filter: contrast(1.1) brightness(0.9);
+}
+
 /* Scanlines effect */
 html::before {
   content: "";
