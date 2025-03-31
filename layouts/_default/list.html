@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+  <h1>{{ .Title }}<span class="blinking-cursor">▁</span></h1>
   {{- if .Summary -}}
     <p>{{ .Summary }}</p>
   {{- end -}}

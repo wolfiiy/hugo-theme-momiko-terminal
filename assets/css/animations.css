@@ -8,3 +8,13 @@ a {
     color var(--short-transition) ease-out;
 }
 
+.blinking-cursor {
+  animation: blink 1.75s step-start infinite;
+  content: "▁";
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0%;
+  }
+}
