@@ -40,6 +40,7 @@
 
 - URL highlighting on hover
 - Alternative compact list view
+- Scanlines
 
 #### Built-in shortcodes
 
