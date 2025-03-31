@@ -225,6 +225,9 @@ pagination.pagerSize = 5
   # Example format, with date, time, and timezone abbreviation:
   # dateFormat = "2006-01-02 3:04:06 PM MST"
 
+  # Momiko fork specific
+  shortLists = true
+  nbOfIndexEntries = 5
 
 [params.twitter]
   # set Twitter handles for Twitter cards
