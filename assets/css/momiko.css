@@ -3,7 +3,7 @@
 :root {
   --accent-rgb: 209, 170, 255;
   --glow: rgba(var(--accent-rgb), 0.4);
-  --scanlines-color: rgba(70, 70, 70, 0.5);
+  --scanlines-color: rgba(50, 50, 50, 0.3);
   --short-transition: 0.08s;
 }
 
@@ -36,8 +36,8 @@ html::before {
     repeating-linear-gradient(
       transparent, 
       transparent 2px, 
-      var(--scanlines-color) 3px, 
-      var(--scanlines-color) 3px
+      var(--scanlines-color) 4px, 
+      var(--scanlines-color) 5px
     );
   z-index: 100;
   pointer-events: none;
