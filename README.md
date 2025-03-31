@@ -36,7 +36,7 @@
 - fully responsive
 - fully based on Hugo ecosystem (Pipes and Modules)
 
-### Extras provided by this fork
+#### Extras provided by this fork
 
 - URL highlighting on hover
 - Alternative compact list view
