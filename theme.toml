@@ -9,5 +9,10 @@ features = ["blog", "shortcode", "syntax highlighting"]
 min_version = 0.90
 
 [author]
-  name = "panr"
+  name = "wolfiy"
+  homepage = "https://linktree.wolfiy.ch"
+
+[original]
+  author = "panr"
   homepage = "https://rkoziel.com"
+  repo = "https://github.com/panr/hugo-theme-terminal"
