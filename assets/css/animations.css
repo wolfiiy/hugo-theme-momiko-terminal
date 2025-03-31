@@ -1,0 +1,10 @@
+:root {
+  --short-transition: 0.06s;
+}
+
+a {
+  transition: 
+    background var(--short-transition) ease-out,
+    color var(--short-transition) ease-out;
+}
+
