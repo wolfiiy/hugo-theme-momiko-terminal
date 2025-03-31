@@ -38,7 +38,7 @@
 
 #### Extras provided by this fork
 
-- URL highlighting on hover
+- URL highlighting and glow on hover
 - Alternative compact list view
 - Scanlines
 - Blinking cursor next to H1 titles

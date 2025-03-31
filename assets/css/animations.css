@@ -1,8 +1,9 @@
 :root {
-  --short-transition: 0.06s;
+  --short-transition: 0.08s;
 }
 
 a {
+  transition: all var(--short-transition) ease-out;
   transition: 
     background var(--short-transition) ease-out,
     color var(--short-transition) ease-out;

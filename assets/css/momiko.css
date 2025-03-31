@@ -1,0 +1,32 @@
+/* Styles added in the Momiko Terminal fork */
+
+:root {
+  --accent-rgb: 209, 170, 255;
+  --glow: rgba(var(--accent-rgb), 0.4);
+  --scanlines-color: rgba(70, 70, 70, 0.5)
+}
+
+a:hover {
+  -webkit-box-shadow:0px 0px 79px 8px var(--accent);
+-moz-box-shadow: 0px 0px 79px 8px var(--accent);
+box-shadow: 0px 0px 79px 8px var(--glow);
+}
+
+html::before {
+  content: "";
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    repeating-linear-gradient(
+      transparent, 
+      transparent 2px, 
+      var(--scanlines-color) 3px, 
+      var(--scanlines-color) 3px
+    );
+  z-index: 100;
+  pointer-events: none;
+}

@@ -5,31 +5,10 @@
   --font-size: 1rem;
   --line-height: 1.54em;
   --radius: 0;
-  --scanlines-color: rgba(70, 70, 70, 0.5)
 }
 
 html {
   box-sizing: border-box;
-
-}
-
-html::before {
-  content: "";
-  position: fixed;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: 
-    repeating-linear-gradient(
-      transparent, 
-      transparent 2px, 
-      var(--scanlines-color) 3px, 
-      var(--scanlines-color) 3px
-    );
-  z-index: 100;
-  pointer-events: none;
 }
 
 *,
