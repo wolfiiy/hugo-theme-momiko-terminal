@@ -1,13 +1,11 @@
-{{ define "main" }}
-  <h1 class="prompt"> {{ .Title }}<span class="blinking-cursor">▁</span></h1>
-  {{- if .Summary -}}
-    <p>{{ .Summary }}</p>
-  {{- end -}}
-  {{ with .Content }}
+{{ define "main" }}  
+  {{- with .Content -}}
     <div class="index-content">
       {{ . }}
     </div>
-  {{ end }}
+  {{- else -}}
+    <h1 class="prompt"> {{ .Title }}<span class="blinking-cursor">▁</span></h1>
+  {{- end -}}
   
   <!-- 
     Posts pages 

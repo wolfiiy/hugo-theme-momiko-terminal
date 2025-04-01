@@ -62,7 +62,7 @@ a {
 }
 
 .prompt::before {
-  content: ">";
+  content: "> ";
 }
 
 /* Weird hack to not overwrite original code */
