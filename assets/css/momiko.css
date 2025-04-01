@@ -60,6 +60,20 @@ a {
   content: "▁";
 }
 
+.prompt::before {
+  content: ">";
+}
+
+/* Weird hack to not overwrite original code */
+.index-content > h1::before {
+  content: "> ";
+}
+
+.index-content > h1::after {
+  animation: blink 1.75s step-start infinite;
+  content: "_";
+}
+
 @keyframes blink {
   50% {
     opacity: 0%;
