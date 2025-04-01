@@ -75,6 +75,19 @@ a {
   content: "_";
 }
 
+.table-of-contents nav {
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.table-of-contents.hide nav {
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+  max-height: fit-content;
+  pointer-events: all;
+}
+
 @keyframes blink {
   50% {
     opacity: 0%;

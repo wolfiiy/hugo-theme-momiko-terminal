@@ -30,3 +30,12 @@ for (const bc of blockcodes) {
 
   parent.closest(".highlight").prepend(title);
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButton = document.getElementById("toggle-toc");
+  const tocContainer = document.querySelector(".table-of-contents");
+
+  toggleButton.addEventListener("click", function () {
+    tocContainer.classList.toggle("hide");
+  });
+});

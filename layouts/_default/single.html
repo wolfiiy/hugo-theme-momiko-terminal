@@ -33,10 +33,13 @@
 
   {{ if (.Params.Toc | default .Site.Params.Toc) }}
     <div class="table-of-contents">
-      <h2>
-        {{ (.Params.TocTitle | default .Site.Params.TocTitle) | default "Table of Contents" }}
-      </h2>
+      <p>
+        <button id="toggle-toc">
+          {{ (.Params.TocTitle | default .Site.Params.TocTitle) | default "Table of Contents" }}
+        </button>
+      </p>
       {{ .TableOfContents }}
+      <hr>
     </div>
   {{ end }}
 
