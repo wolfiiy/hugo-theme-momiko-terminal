@@ -38,10 +38,12 @@
 
 #### Extras provided by this fork
 
-- URL highlighting and glow on hover
-- Alternative compact list view
-- Scanlines
-- Blinking cursor next to H1 titles
+- URLs are highlighted when hovered with the mouse.
+- Tables of content can be toggled with a click (hidden by default)
+- A faint glow has been added to some elements when they are hovered with the mouse
+- An alternative compact view for lists, with an independant limit of posts per page
+- A faint glow and scanlines have been applied to the entirety of the website to make it feel even more CRT-ish
+- Titles have been turned into `> Command prompts_`
 
 #### Built-in shortcodes
 
