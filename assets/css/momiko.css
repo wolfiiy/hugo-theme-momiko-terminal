@@ -26,7 +26,6 @@ a:hover {
 html {
   text-shadow: 0px 0px 1.5px rgba(255, 255, 255, 0.8);
   filter: contrast(1.1) brightness(0.9);
-  animation: slight-flicker 1.5s step-start infinite;
 }
 
 /* Scanlines effect */
@@ -47,6 +46,7 @@ html::before {
     );
   z-index: 100;
   pointer-events: none;
+  animation: slight-flicker 1.5s step-start infinite;
 }
 
 a {
@@ -96,67 +96,36 @@ a {
 
 @keyframes slight-flicker {
   0% {
-    opacity: 0.9;
-  }
-  5% {
-    opacity: 0.92;
+    opacity: 1;
   }
   10% {
-    opacity: 0.94;
-  }
-  15% {
-    opacity: 0.96;
+    opacity: 0.6;
   }
   20% {
-    opacity: 0.98;
-  }
-  25% {
-    opacity: 1;
+    opacity: 0.7;
   }
   30% {
-    opacity: 0.98;
-  }
-  35% {
-    opacity: 0.96;
+    opacity: 0.65;
   }
   40% {
-    opacity: 0.94;
-  }
-  45% {
-    opacity: 0.92;
+    opacity: 0.85;
   }
   50% {
-    opacity: 0.9;
-  }
-  55% {
-    opacity: 0.92;
+    opacity: 0.75;
   }
   60% {
-    opacity: 0.94;
-  }
-  65% {
-    opacity: 0.96;
+    opacity: 0.8;
   }
   70% {
-    opacity: 0.98;
-  }
-  75% {
-    opacity: 1;
+    opacity: 0.6;
   }
   80% {
-    opacity: 0.98;
-  }
-  85% {
-    opacity: 0.96;
+    opacity: 0.95;
   }
   90% {
-    opacity: 0.94;
-  }
-  95% {
-    opacity: 0.92;
+    opacity: 0.7;
   }
   100% {
-    opacity: 0.9;
+    opacity: 1;
   }
 }
-
