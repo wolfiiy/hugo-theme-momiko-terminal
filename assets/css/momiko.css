@@ -26,6 +26,7 @@ a:hover {
 html {
   text-shadow: 0px 0px 1.5px rgba(255, 255, 255, 0.8);
   filter: contrast(1.1) brightness(0.9);
+  animation: slight-flicker 1.5s step-start infinite;
 }
 
 /* Scanlines effect */
@@ -58,10 +59,6 @@ a {
 .blinking-cursor {
   animation: blink 1.75s step-start infinite;
   content: "▁";
-}
-
-html {
-  animation: slight-flicker 1.5s step-start infinite;
 }
 
 .prompt::before {
