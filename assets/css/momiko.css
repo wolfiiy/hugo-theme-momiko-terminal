@@ -56,6 +56,11 @@ a {
     color var(--short-transition) ease-out;
 }
 
+table {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 .blinking-cursor {
   animation: blink 1.75s step-start infinite;
   content: "▁";
